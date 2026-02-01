@@ -2,7 +2,11 @@ $(function() {
     function FilamentReloadedViewModel(parameters) {
         var self = this;
 
-        self.filamentIcon = $("#filament_indicator")
+        self.filamentIcon = $("#filament_indicator");
+
+        self.onAfterBinding = function() {
+            self.filamentIcon = $("#filament_indicator");
+        };
 
 
         self.onDataUpdaterPluginMessage = function(plugin, data) {
