@@ -1,8 +1,14 @@
 # OctoPrint-FilamentReloaded
 
+## Reason for this fork
+
+I have Octo-relay plugin installed on my octoprint, that caused a clash in the GPIO controll for the edge detect. The sensor would only react before the print.
+But when active print nothing happend... <br>
+So i added the option to check the sensor by timed polling or edge detect. Worked like a charm.
+
 ## Issue Tracking
 
-I have a day job, so when filing an issue please tag me @nickmitchko in the issue so I get an email.
+I have a day job, so when filing an issue please tag me @gregtech87 in the issue so I get an email.
 
 ## Overview
 
@@ -38,7 +44,7 @@ An API is available to check the filament sensor status via a GET method to `/pl
 ## Installation
 
 * Install via the bundled [Plugin Manager](https://github.com/foosel/OctoPrint/wiki/Plugin:-Plugin-Manager).
-* Manually using this URL: https://github.com/nickmitchko/Octoprint-Filament-Reloaded/archive/master.zip
+* Manually using this URL: https://github.com/gregtech87/Octoprint-Filament-Reloaded/archive/refs/heads/master.zip
 
 ## Configuration
 

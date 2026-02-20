@@ -54,6 +54,13 @@
         </div>
     </div>
     <div class="control-group">
+        <div class="controls" data-toggle="tooltip" title="{{ _('Time between polling is set in NavBar Icon Check Frequency field') }}">
+            <label class="checkbox">
+                <input type="checkbox" data-bind="checked: settings.plugins.filamentreload.poll_mode"> {{ _('Check filament sensor with polling instead of event') }}
+            </label>
+        </div>
+    </div>
+    <div class="control-group">
         <div class="controls" data-toggle="tooltip" title="{{ _('Beware that for some printers, pausing is incompatible with M600 (Filament change pause) as both will move the print head and it can resume at a different position as it paused.') }}">
             <label class="checkbox">
                 <input type="checkbox" data-bind="checked: settings.plugins.filamentreload.pause_print"> {{ _('Octoprint pause when out of filament') }}
@@ -65,7 +72,7 @@
             </label>
         </div>
     </div>
-    
+
     <div class="control-group">
         <div class="controls" data-toggle="tooltip" title="{{ _('With this option checked, the plugin will ignore subsequent reports of out of filament until the print is resumed again.') }}">
             <label class="checkbox">
