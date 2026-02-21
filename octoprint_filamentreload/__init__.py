@@ -349,9 +349,8 @@ class FilamentReloadedPlugin(octoprint.plugin.StartupPlugin,
 				repo="Octoprint-Filament-Reloaded",
 				current=self._plugin_version,
 				# update method: pip
-				pip="https://github.com/gregtech87/Octoprint-Filament-Reloaded/archive/{target_version}.zip"
+				pip="https://github.com/gregtech87/Octoprint-Filament-Reloaded/archive/refs/tags/{target_version}.zip"
 			))
-
 
 __plugin_name__ = "Filament Sensor Reloaded Polling"
 __plugin_version__ = "1.4.5"
